@@ -6,7 +6,7 @@ const divContainer = document.querySelector(".gallery");
 const galleryImages = galleryItems
   .map(
     (galleryImage) =>
-`<a class="gallery__item" href="${galleryImage.original}">
+      `<a class="gallery__item" href="${galleryImage.original}">
   <img
     class="gallery__image"
     src="${galleryImage.preview}"
@@ -18,8 +18,11 @@ const galleryImages = galleryItems
 
 divContainer.innerHTML = galleryImages;
 
-const lightbox = new SimpleLightbox('.gallery a', {captionDelay: 250, captionsData: 'alt', captionPosition: 'bottom'});
-lightbox.next;
+const lightbox = new SimpleLightbox(".gallery a", {
+  captionDelay: 250,
+  captionsData: "alt",
+  captionPosition: "bottom",
+});
 
 divContainer.addEventListener("click", onOpenModal);
 
