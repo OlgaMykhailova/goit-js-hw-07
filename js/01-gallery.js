@@ -16,9 +16,7 @@ const galleryImages = galleryItems
     alt="${galleryImage.description}"
    />
 </a>
-      </div>
-   
-  </div>`
+    </div>`
   )
   .join("");
 
