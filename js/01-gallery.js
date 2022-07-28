@@ -42,6 +42,7 @@ function onOpenModal(event) {
     if (basicLightbox.visible() && event.code === "Escape") {
       instance.close();
       window.removeEventListener("keydown", onCloseModal);
+          
     }
   }
 }

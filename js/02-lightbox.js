@@ -24,12 +24,3 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionPosition: "bottom",
 });
 
-divContainer.addEventListener("click", onOpenModal);
-
-function onOpenModal(event) {
-  if (event.target.nodeName !== "IMG") {
-    return;
-  }
-
-  event.preventDefault();
-}
